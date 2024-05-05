@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>danh sách bệnh nhân</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body onload="readAll()">
+    <div class="container">
+        <!-- danh sách bệnh nhân -->
+        <div class="form_container">
+            <h1>Danh sách bệnh nhân</h1>
+            <table>
+                <thead>
+                    <th>Họ và tên BN</th>
+                    <th>SĐT</th>
+                    <th>Giới tính</th>
+                    <th>mã BH</th>
+                    <th>CCCD</th>
+                    <th>Địa chỉ</th>
+                    <th>Lịch sử bệnh án</th>
+                    <th>KQ xét nghiệm</th>
+                    <th>Th/gian vào</th>
+                    <th>Th/gian ra</th>
+                    <th>B/sĩ điều trị</th>
+                    <th>Tình trạng</th>
+                    <th>Hành động</th>
+                </thead>
+                <tbody class="data_table">
+
+                </tbody>
+            </table>
+
+            <div class="add_div">
+                <button onclick="create()">Thêm bệnh nhân</button>
+                <button onclick="findPatient()" id="find">Tìm kiếm</button>
+            </div>
+            <!-- tạo case bệnh nhân -->
+            <form class="create_form">
+                <h2>Thông tin bệnh nhân</h2>
+                <span class="detail">Họ và tên bệnh nhân</span>
+                <input type="text" class = "name" placeholder="Nhập họ và tên"><br>
+                <span class="detail">Số điện thoại</span>
+                <input type="text" class = "phone"  placeholder="nhập số điện thoại"><br>
+                <span class="detail">Giới tính</span>
+                <select class="gender">
+                    <option value="nam">Nam</option>
+                    <option value="nữ">Nữ</option>
+                    <option value="khác">Khác</option>
+                  </select><br>
+                <span class="detail">Mã BH</span>
+                <input type="text" class = "insurance"  placeholder="nhập mã BH"><br>   
+                <span class="detail">Số CCCD</span>
+                <input type="text" class = "CCCD"  placeholder="nhập số CCCD"><br>
+                <span class="detail">Địa chỉ</span>
+                <input type="text" class = "address"  placeholder="nhập địa chỉ"><br>
+                <span class="detail">Lịch sử bệnh án</span>
+                <input type="text" class = "history"  placeholder="nhập"><br>
+                <span class="detail">KQ xét nghiệm</span>
+                <input type="text" class = "XNresult"  placeholder="nhập kết quả"><br>
+                <span class="detail">Thời gian vào</span>
+                <input type="date" class = "timein"  placeholder="xx/yy/zzzz"><br>
+                <span class="detail">Thời gian ra</span>
+                <input type="date" class = "timeout"  placeholder="xx/yy/zzzz"><br>
+                <span class="detail">Bác sĩ điều trị</span>
+                <input type="text" class = "doctor"  placeholder="họ và tên bác sĩ"><br>
+                <span class="detail">Trạng thái</span>
+                <select class="condition">
+                    <option value="Đang điều trị">Đang điều trị</option>
+                    <option value="Xuất viện">Xuất viện</option>
+                  </select><br>
+                <button type="button" onclick="add()">Thêm bệnh nhân</button>
+            </form>
+            <form class="update_form">
+                <input type="text" hidden class = "id">
+                <input type="text" class = "uname">
+                <input type="text" class = "uphone">
+                <input type="text" class = "uinsurance">
+                <input type="text" class = "uCCCD">
+                <input type="text" class = "uaddress">
+                <select class="ugender">
+                    <option value="nam" class="male">Nam</option>
+                    <option value="nữ" class="female">Nữ</option>
+                    <option value="khác" class="other">Khác</option>
+                  </select>
+                <input type="text" class = "uhistory"  placeholder="nhập">
+                <input type="text" class = "uXNresult"  placeholder="nhập kết quả">
+                <input type="date" class = "utimein"  placeholder="xx/yy/zzzz">
+                <input type="date" class = "utimeout"  placeholder="xx/yy/zzzz">
+                <input type="text" class = "udoctor"  placeholder="họ và tên bác sĩ">
+                <select class="ucondition">
+                      <option value="Đang điều trị">Đang điều trị</option>
+                      <option value="Xuất viện">Xuất viện</option>
+                    </select>
+                <button type="button" onclick="update()">Xong</button>
+            </form>
+            <!-- nhập id tìm bệnh nhân -->
+            <form class="find_form">
+            <input type="text" class="fid" placeholder="nhập số thứ tự">
+            <button type="button" onclick="displayPatient()">Hiển thị thông tin</button>
+            </form>
+            <div class="infor"></div>
+        </div>
+    </div>
+
+    <script src="./manage.js"></script>
+</body>
+</html>
