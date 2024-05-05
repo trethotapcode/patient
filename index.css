@@ -1,0 +1,164 @@
+.container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color:rgb(2, 17,30);
+}
+
+.form_container{
+    margin-top: 20px;
+    width: 95vw;
+    border-radius: 10px;
+    height: 100vh;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid gray;
+}
+
+form button {
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.add_div {
+    width: 100%;
+    margin-left: 1200px;
+    padding: 20px 0px 0px 50px; 
+}
+
+.add_div button{
+    padding: 8px;
+    background-color: green;
+    color: white;
+    border-radius: 7px;
+    margin-left: 10px;
+}
+
+#find{
+    background-color: red;
+    width: 90px;
+}
+
+.add_div button:hover{
+    background-color: rgb(2,58,2);
+    cursor: pointer;
+}
+table{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.goback{
+    padding: 8px;
+    background-color: gray;
+    color: white;
+    border-radius: 7px;
+    margin-left: 10px;
+}
+
+.update_form, .create_form, .find_form, .return{
+    display: none; 
+}
+
+table .edit {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+table .delete {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+
+.infor h2, .create_form h2{
+    text-align: center;
+}
+
+
+.create_form .detail {
+    display: flex;
+    flex-wrap: wrap;
+}
+.create_form text{
+    height: 45px;
+    width: 100%;
+}
+
+.create_form, .update_form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .create_form h2, .update_form h2 {
+    text-align: center;
+  }
+  
+  .create_form, .update_form span.detail {
+    display: none;
+    margin-bottom: 5px;
+  }
+  
+  .create_form input[type="text"], 
+  .create_form input[type="date"], 
+  .create_form select, 
+  .update_form input[type="text"], 
+  .update_form input[type="date"], 
+  .update_form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .create_form button, .update_form button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .create_form button:hover, .update_form button:hover {
+    background-color: #45a049;
+  }
+  
+  .create_form input[type="text"]::placeholder, 
+  .create_form input[type="date"]::placeholder, 
+  .update_form input[type="text"]::placeholder, 
+  .update_form input[type="date"]::placeholder {
+    color: #ccc;
+  }
+  
+  .create_form select, .update_form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    box-sizing: border-box;
+  }
+  
+  .create_form select:focus, .update_form select:focus {
+    outline: none;
+    border-color: #4CAF50;
+  }
+  
