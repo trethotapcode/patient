@@ -8,6 +8,7 @@
 </head>
 <body onload="readAll()">
     <div class="container">
+        <!-- danh sách bệnh nhân -->
         <div class="form_container">
             <h1>Danh sách bệnh nhân</h1>
             <table>
@@ -35,7 +36,7 @@
                 <button onclick="create()">Thêm bệnh nhân</button>
                 <button onclick="findPatient()" id="find">Tìm kiếm</button>
             </div>
-
+            <!-- tạo case bệnh nhân -->
             <form class="create_form">
                 <h2>Thông tin bệnh nhân</h2>
                 <span class="detail">Họ và tên bệnh nhân</span>
@@ -94,7 +95,7 @@
                     </select>
                 <button type="button" onclick="update()">Xong</button>
             </form>
-
+            <!-- nhập id tìm bệnh nhân -->
             <form class="find_form">
             <input type="text" class="fid" placeholder="nhập số thứ tự">
             <button type="button" onclick="displayPatient()">Hiển thị thông tin</button>
