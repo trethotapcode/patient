@@ -10,8 +10,7 @@ let data = [
     {id: 9, name:"Vũ Thị Hồng", gender: "nữ",insurance:'11935', CCCD:'37771',address:"234 Đường Vũ Huy Tấn, Quận Bình Thạnh, TP.Hồ Chí Minh", phone: '37810',history: "không",XNresult: "âm tính",timein: "2024-05-08",timeout:"2024-05-08",doctor: "Khoa",condition: "Đang điều trị"},
     {id: 10, name:"Lý Quang Minh", gender: "nam",insurance:'68489', CCCD:'67389',address:"890 Đường Hoàng Quốc Việt, Quận 7, TP.Hồ Chí Minh", phone: '75957',history: "không",XNresult: "dương tính",timein: "2024-05-08",timeout:"2024-05-09",doctor: "Khoa",condition: "Đang điều trị"},
     {id: 11, name:"Lý Quang Minh", gender: "nữ",insurance:'68489', CCCD:'67389',address:"890 Đường Hoàng Quốc Việt, Quận 7, TP.Hồ Chí Minh", phone: '75957',history: "không",XNresult: "dương tính",timein: "2024-05-08",timeout:"2024-05-09",doctor: "Khoa",condition: "Đang điều trị"},
-    {id: 12, name:"Thanh Thảo", gender: "nam",insurance:'34343', CCCD:'34347',address:"34872034", phone: '75957',history: "không",XNresult: "dương tính",timein: "2024-05-08",timeout:"2024-05-09",doctor: "Khoa",condition: "Đang điều trị"},
-    {id: 13, name:"Thanh Thảo", gender: "nam",insurance:'34343', CCCD:'34347',address:"34872034", phone: '75957',history: "không",XNresult: "dương tính",timein: "2024-05-08",timeout:"2024-05-09",doctor: "Khoa",condition: "Đang điều trị"},
+    {id: 12, name:"Thanh Thảo", gender: "nam",insurance:'34343', CCCD:'34347',address:"34872034", phone: '75957',history: "không",XNresult: "dương tính",timein: "2024-05-08",timeout:"2024-05-09",doctor: "Khoa",condition: "Đang điều trị"}
 ]
 // hiển thị danh sách bệnh nhân sau các chỉnh sửa.
 function readAll(){
